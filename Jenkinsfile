@@ -1,10 +1,15 @@
  pipeline {
     agent any
-    
+
     stages {
-        stage('Test') {
+        stage('Hello') {
                     steps {
                         echo 'Hello world!'
+                    }
+        }
+        stage('List all files') {
+                    steps {
+                        ls -a 
                     }
         }
     }
